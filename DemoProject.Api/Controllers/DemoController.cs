@@ -11,4 +11,10 @@ public class DemoController : ControllerBase
     {
         return Ok("Ok");
     }
+
+    [HttpPost]
+    public IActionResult Post([FromBody] InsertDemoObjectDto dto)
+    {
+        return Ok();
+    }
 }
