@@ -1,12 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using DemoProject.CQS.ViewModels;
+using MediatR;
 
-namespace DemoProject.CQS.Commands.Demo
+namespace DemoProject.CQS.Commands.Demo;
+
+public class InsertDemoObjectCommand : IRequest<DemoObjectViewModel>
 {
-    internal class InsertDemoObjectCommand
-    {
-    }
+    public string Name { get; set; }
 }

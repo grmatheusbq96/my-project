@@ -8,7 +8,16 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="12.0.1" />
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="12.0.1" />
+    <PackageReference Include="MediatR" Version="12.2.0" />
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.4.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\DemoProject.Application\DemoProject.Application.csproj" />
+    <ProjectReference Include="..\DemoProject.CQS\DemoProject.CQS.csproj" />
+    <ProjectReference Include="..\DemoProject.Domain\DemoProject.Domain.csproj" />
   </ItemGroup>
 
 </Project>

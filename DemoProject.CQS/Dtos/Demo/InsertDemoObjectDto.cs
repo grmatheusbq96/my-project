@@ -1,5 +1,6 @@
 ﻿namespace DemoProject.CQS.Dtos.Demo;
 
-internal class InsertDemoObjectDto
+public class InsertDemoObjectDto
 {
+    public string Name { get; set; }
 }

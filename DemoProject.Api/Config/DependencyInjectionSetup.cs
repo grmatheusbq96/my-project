@@ -1,4 +1,7 @@
-﻿namespace DemoProject.Api.Config;
+﻿using System.Reflection;
+using DemoProject.Application.Extensions;
+
+namespace DemoProject.Api.Config;
 
 public static class DependencyInjectionSetup
 {
@@ -7,6 +10,8 @@ public static class DependencyInjectionSetup
         builder.Services.AddControllers();
         builder.Services.AddEndpointsApiExplorer();
         builder.Services.AddSwaggerGen();
+        builder.Services.AddApplication();
+        builder.Services.AddAutoMapper(Assembly.GetExecutingAssembly());
 
         return builder;
     }
